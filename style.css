@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+.header {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3)), url("img/slide_bg_circle.png");
+    background-size: 100% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 850px;
+    position: relative;
+}
+
+.nav-container {
+    background: transparent !important;
+    z-index: 3;
+}
+
+.header .navbar-brand {
+
+
+    padding-left: 16px;
+    padding-right: 16px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_nav .nav-item {
+    margin-right: 20px;
+
+}
+
+.header_nav .nav-item .nav-link {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.nav-link.active {
+    color: blue !important;
+
+}
+
+.header_nav .scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    animation: arseel ease-in-out 0.5s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),
+        0 0 -5px rgba(0, 0, 0, 0.3);
+}
+
+/* .header_nav .scroll .nav-item .nav-link {
+    
+} */
+@keyframes arseel {
+    0% {
+        top: -30%;
+    }
+
+    50% {
+        top: -15%;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+.header_nav .button_main {
+
+    border-radius: 8px;
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.btn-primary:focus {
+    color: #fff;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.main_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_text h2 {
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.main_text h1 {
+    font-weight: 900;
+    font-size: 7rem;
+}
+
+.main_text p {
+    font-weight: 700;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.main_text .btn_transperent {
+    border-radius: 19px;
+    background: transparent;
+    border: 2px solid #fff;
+    transition: 0.5s;
+}
+
+.polygone-img-top {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    background-image: url("img/hero1.jpg");    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;   
+    background-color: #eee;
+    right: 0;
+    top: 0;
+    -webkit-clip-path: polygon(25% 0, 100% 0%, 101% 70%, 66% 80%, 0% 17%);
+    clip-path: polygon(25% 0, 100% 0%, 101% 70%, 66% 80%, 0% 17%);
+
+}
+
+.polygone-img-bottom {
+    width: 650px;
+    height: 380px;
+    background-image: url("img/hero2.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    z-index: 2;
+    background-color: #eee;
+    right: 0px;
+    bottom: 0px;
+    -webkit-clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+/*-----------------------------------------header-close-------------------------------- */
+.help {
+    padding: 7rem 0px 1rem 0px;
+}
+
+.help-container {
+    padding: 5rem 0px 1rem 0px;
+
+}
+
+.help .help-text span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #086ad7;
+}
+
+.help .help-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #000;
+}
+
+.card {
+    border: none !important;
+    cursor: default;
+}
+
+.card-img-box {
+    background: url("img/feature_img.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 471px;
+    background-color: #eee;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.card-text h6 {
+    font-size: 1.5rem;
+    transition: 0.4s ease-in-out;
+}
+
+.card-text span {
+    font-size: 1rem;
+    color: #696969;
+    font-weight: 600;
+}
+
+.card-main:hover h6 {
+    color: #086ad7;
+}
+
+.card-main-2 {
+    background: #086ad7;
+    border-radius: 8px;
+    background-image: url("img/wave.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.card-main-2 h5 {
+
+    color: #fff;
+    font-weight: 600;
+   
+}
+
+/*------------------------------- about start-----------------------------------*/
+
+.about-us {
+    padding: 80px 0px;
+    position: relative;
+    z-index: -1;
+}
+
+.about-text .style-text {
+    font-size: 4rem;
+    line-height: 0.5;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #777777;
+    opacity: 0.1;
+}
+
+.about-text h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #086ad7;
+    text-transform: uppercase;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #696969;
+    width: 93%;
+}
+.about-card{
+    border: 2px solid rgb(8, 106, 215,0.2) !important;
+    transition: all 0.3s ease-in-out;
+    width: 90%;
+}
+.about-card:hover{
+    border: 2px solid rgb(8, 106, 215,1) !important;
+}
+.about-card .icon i{
+    font-size: 3rem;
+    color: #086ad7;
+}
+.about-card-main
+{
+    position: relative;
+    overflow: hidden;
+}
+.about-image{
+    background: url("img/dot-circle.png");
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: -90px;
+    left: -100px;
+    
+}
+.about-image2{
+    background: url("img/about-us.jpg");
+    height: 500px;
+    width: 100%;
+    z-index: 5;
+}
+
+.progress-wrap {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    cursor: pointer;
+    display: block;
+    border-radius: 100%;
+    background: rgb(249, 79, 79);
+    box-shadow: inset 0 0 0 0.1rem rgb(128 130 134 / 25%);
+    z-index: 1010;
+    opacity: 0.1;
+    /* visibility: block; */
+    transform: translateY(0.75rem);
+    transition: all .2s linear,margin-right 0s;
+}
+
+
+.progress-wrap:after {
+    position: absolute;
+    font-family: Unicons;
+    content: "\e951";
+    text-align: center;
+    line-height: 2.3rem;
+    font-size: 1.2rem;
+    color: #3f78e0;
+    left: 0;
+    top: 0;
+    height: 2.3rem;
+    width: 2.3rem;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    transition: all .2s linear;
+}
